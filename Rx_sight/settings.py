@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'ranger',
+=======
+>>>>>>> Initial Commit
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,9 @@ ROOT_URLCONF = 'Rx_sight.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR,'templates')],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,6 +81,7 @@ WSGI_APPLICATION = 'Rx_sight.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
             'options': '-c search_path=postgres,rxsight'
@@ -84,6 +90,7 @@ DATABASES = {
         'USER': 'postgresadmin',
         'PASSWORD': 'postgresadmin',
         'HOST': 'postgresdb-1.caogfy7s7fym.us-east-1.rds.amazonaws.com',
+
     }
 }
 
