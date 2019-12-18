@@ -7,6 +7,20 @@ jQuery(document).ready(function($){
 		$lateral_cart = $('#cd-cart'),
 		$shadow_layer = $('#cd-shadow-layer');
 
+    $(document).ready(function(){ 
+		
+		$("#add_a").click( function(){
+			$("ul").append("<li></li>");
+		});
+		$("#remove_a").click( function(){
+			$("li:last").remove();
+		});
+	
+	})	
+	
+	
+	
+	
 	//open lateral menu on mobile
 	$hamburger_icon.on('click', function(event){
 		event.preventDefault();

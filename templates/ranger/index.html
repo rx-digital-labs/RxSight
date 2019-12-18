@@ -1,21 +1,20 @@
-{% load static %}
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="{% static 'http://fonts.googleapis.com/css?family=PT+Sans:400,700' %}" rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="{% static 'css/reset.css' %}"> <!-- CSS reset -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Gem style -->
-	<script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
-	<title>Side Cart</title>
+	<title>Rx Sight</title>
 </head>
 <body class="foo">
 	<header>
-		<div id="logo"><img src="{% static 'img/cd-logo.svg' %}" alt="Homepage"></div>
+		<div id="logo"><img src="img/rx1.png" alt="Homepage" height="80" width="80"></div>
 
 		<div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
 		<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
@@ -23,11 +22,8 @@
 
 	<nav id="main-nav">
 		<ul>
-			<li><a href="#0">Home</a></li>
-			<li><a href="#0">About</a></li>
-			<li><a class="current" href="#0">Services</a></li>
-			<li><a href="#0">Gallery</a></li>
-			<li><a href="#0">Contact</a></li>
+			<li><a class='current'>Home</a></li>
+			
 		</ul>
 	</nav>
 
@@ -79,19 +75,19 @@
 			<li>
 				<span class="cd-qty">1x</span> Product Name
 				<div class="cd-price">$9.99</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+				<a href="#0" id="remove_a" class="cd-item-remove cd-img-replace">Remove</a>
 			</li>
 
 			<li>
 				<span class="cd-qty">2x</span> Product Name
 				<div class="cd-price">$19.98</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+				<a href="#0" id="remove_a" class="cd-item-remove cd-img-replace">Remove</a>
 			</li>
 
 			<li>
 				<span class="cd-qty">1x</span> Product Name
 				<div class="cd-price">$9.99</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+				<a href="#0" id="remove_a" class="cd-item-remove cd-img-replace">Remove</a>
 			</li>
 		</ul> <!-- cd-cart-items -->
 
@@ -103,7 +99,7 @@
 		
 		<p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
 	</div> <!-- cd-cart -->
-<script src="{% static 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script> <!-- Gem jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
 </body>
 </html>
