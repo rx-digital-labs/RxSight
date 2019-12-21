@@ -83,6 +83,7 @@ header {
   }
 }
 
+
 #logo {
   padding-top: 5px;
   /* delete this property if you don't want your logo to scale down on mobile devices */
@@ -133,7 +134,9 @@ header {
   right: 0;
 }
 #cd-cart-trigger a {
-  background: #26292f url("../img/cd-cart.svg") no-repeat center center;
+  background: #26292f url("../img/cart.png") no-repeat center center;
+  will-change: transform; 
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
 }
 @media only screen and (min-width: 1200px) {
   #cd-cart-trigger {

@@ -135,6 +135,8 @@ header {
 }
 #cd-cart-trigger a {
   background: #26292f url("../img/cart.png") no-repeat center center;
+  will-change: transform; 
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
 }
 @media only screen and (min-width: 1200px) {
   #cd-cart-trigger {

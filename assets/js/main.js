@@ -1,4 +1,4 @@
-$(document).ready(function($){
+jQuery(document).ready(function($){
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var $L = 1200,
 		$menu_navigation = $('#main-nav'),
@@ -7,17 +7,20 @@ $(document).ready(function($){
 		$lateral_cart = $('#cd-cart'),
 		$shadow_layer = $('#cd-shadow-layer');
 
-	$('#cd-cart').ready(function () {
-
-		$("#add_a").click(function () {
+    $(document).ready(function(){ 
+		
+		$("#add_a").click( function(){
 			$("ul").append("<li></li>");
 		});
-		$("#remove_a").click(function () {
+		$("#remove_a").click( function(){
 			$("li:current").remove();
 		});
-
+	
 	})	
-
+	
+	
+	
+	
 	//open lateral menu on mobile
 	$hamburger_icon.on('click', function(event){
 		event.preventDefault();
