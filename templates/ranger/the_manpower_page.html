@@ -35,41 +35,17 @@
 
     <main>
         <ul id="cd-gallery-items" class="cd-container">
+            {% for ma in man %}
             <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
+                <img src="{{ma.img.url}}" alt="Preview image">
+                <h3>{{ma.name}}</h3>
+                <h3>{{ma.type}}</h3>
+                <h3>{{ma.specialization}}</h3>
+                <h3>{{ma.mode}}</h3>
+                <h3>{{ma.cost}}</h3>
+                <h3>{{ma.available}}</h3>
             </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
-
-            <li>
-                <img src="{% static 'img/thumb.jpg' %}" alt="Preview image">
-            </li>
+            {% endfor %}
         </ul> <!-- cd-gallery-items -->
     </main>
 

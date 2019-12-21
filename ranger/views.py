@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.db.models import Count, Sum
 from django.db.models.query import RawQuerySet
 from django.db import connection
-from ranger.models import surgery
+from ranger.models import surgery, manpower
 
 # Create your views here.
 
@@ -13,8 +13,10 @@ def index(request):
 
     return render(request,'ranger/index.html',{'surg':surg})
 
-def manpower(request):
-    return render(request,'ranger/the_manpower_page.html')
+def man(request):
+    man = manpower.objects.all()
+
+    return render(request,'ranger/the_manpower_page.html',{'man':man})
 
 def calender(request):
     return render(request,'ranger/calender.html')
