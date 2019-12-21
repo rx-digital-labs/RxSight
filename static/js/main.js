@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			$("ul").append("<li></li>");
 		});
 		$("#remove_a").click( function(){
-			$("li:last").remove();
+			$("li:current").remove();
 		});
 	
 	})	

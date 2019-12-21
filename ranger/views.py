@@ -9,3 +9,6 @@ from django.db import connection
 
 def index(request):
     return render(request,'ranger/index.html')
+
+def manpower(request):
+    return render(request,'ranger/the_manpower_page.html')
