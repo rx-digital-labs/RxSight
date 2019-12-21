@@ -27,11 +27,20 @@
 
 	<nav id="main-nav">
 		<ul>
-			<li><a class='current' href="manpower">Manpower </a></li>
+			<li><a class='current' href="manpower">Manpower</a></li>
+			<li><a class='current' href="calender">Calender</a></li>
 		</ul>
 	</nav>
 
 	<main>
+		<ul id="cd-gallery-items" class="cd-container">
+			{% for sur in surg %}
+			<li>
+				<img src="{{sur.img.url}}" alt="Preview image">
+				<h4>{{sur.name}}</h4>
+			</li>
+			{% endfor %}
+		</ul>
 	</main>
 
 	<div id="cd-shadow-layer"></div>

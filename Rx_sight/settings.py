@@ -77,15 +77,19 @@ WSGI_APPLICATION = 'Rx_sight.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            'options': '-c search_path=postgres,rxsight'
-        },
-        'NAME': 'postgres',
-        'USER': 'postgresadmin',
-        'PASSWORD': 'postgresadmin',
-        'HOST': 'postgresdb-1.caogfy7s7fym.us-east-1.rds.amazonaws.com',
+       
+        'NAME': 'rxsight',
+        'USER': 'postgres',
+        'PASSWORD': 'malkoti',
+        'HOST': 'localhost',
     }
 }
+""" 
+'OPTIONS': {
+            'options': '-c search_path=postgres,rxsight'
+        },
+"""
+#postgresdb-1.caogfy7s7fym.us-east-1.rds.amazonaws.com
 
 
 # Password validation

@@ -193,7 +193,7 @@ header {
   padding: 0 1em;
   border-bottom: 1px solid #e0e6ef;
 }
-#main-nav ul .current {
+#main-nav ul .current1 {
   box-shadow: inset 3px 0 #435779;
 }
 @media only screen and (min-width: 1200px) {
@@ -230,7 +230,7 @@ header {
     background: #435779;
     color: #FFF;
   }
-  .no-touch #main-nav ul a:hover {
+  .no-touch #main-nav1 ul a:hover {
     background: #435779;
     color: #FFF;
   }
