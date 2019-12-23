@@ -23,5 +23,6 @@ def calender(request):
 
 def tark(request,id):
     surg = surgery.objects.filter(pk=id).values('name')
-    print(surg)
+    plea = surg[0].get('name')
+    print(plea)
     return render(request,'ranger/calender.html')
