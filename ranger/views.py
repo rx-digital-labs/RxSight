@@ -22,4 +22,6 @@ def calender(request):
     return render(request,'ranger/calender.html')
 
 def tark(request,id):
+    surg = surgery.objects.filter(pk=id).values('name')
+    print(surg)
     return render(request,'ranger/calender.html')
