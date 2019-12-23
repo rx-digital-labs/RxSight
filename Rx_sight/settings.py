@@ -38,9 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'ranger',
 =======
 >>>>>>> Initial Commit
+=======
+    'ranger',
+>>>>>>> ye le bhai
 ]
 
 MIDDLEWARE = [
@@ -59,8 +63,12 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR,'templates')],
 
+=======
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+>>>>>>> ye le bhai
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,6 +90,7 @@ WSGI_APPLICATION = 'Rx_sight.wsgi.application'
 DATABASES = {
     'default': {
 <<<<<<< HEAD
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.postgresql',
         'OPTIONS': {
             'options': '-c search_path=postgres,rxsight'
@@ -91,8 +100,22 @@ DATABASES = {
         'PASSWORD': 'postgresadmin',
         'HOST': 'postgresdb-1.caogfy7s7fym.us-east-1.rds.amazonaws.com',
 
+=======
+        'ENGINE': 'django.db.backends.postgresql',
+       
+        'NAME': 'rxsight',
+        'USER': 'postgres',
+        'PASSWORD': 'malkoti',
+        'HOST': 'localhost',
+>>>>>>> ye le bhai
     }
 }
+""" 
+'OPTIONS': {
+            'options': '-c search_path=postgres,rxsight'
+        },
+"""
+#postgresdb-1.caogfy7s7fym.us-east-1.rds.amazonaws.com
 
 
 # Password validation
@@ -131,4 +154,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)dgsdgsd
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
