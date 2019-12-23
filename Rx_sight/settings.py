@@ -77,7 +77,6 @@ WSGI_APPLICATION = 'Rx_sight.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-       
         'NAME': 'rxsight',
         'USER': 'postgres',
         'PASSWORD': 'malkoti',
