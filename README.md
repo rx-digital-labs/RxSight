@@ -10,7 +10,3 @@ This is my first commit
 
 This is the magnum opus branch of master
 >>>>>>> Initial Commit
-=======
-# RxSight
-Hospital Analytics - POC
->>>>>>> ye le bhai
