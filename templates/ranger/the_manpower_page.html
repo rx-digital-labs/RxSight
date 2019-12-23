@@ -13,8 +13,8 @@
 
     <link rel="stylesheet" href="{% static 'css/reset.css' %}"> <!-- CSS reset -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Gem style -->
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
     <script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
-
     <title>Rx Sight</title>
 </head>
 
@@ -34,26 +34,36 @@
     </nav>
 
     <main>
-        <ul id="cd-gallery-items" class="cd-container">
-            {% for ma in man %}
-            <li>
-                <img src="{{ma.img.url}}" alt="Preview image">
-                <h3>{{ma.name}}</h3>
-                <h3>{{ma.type}}</h3>
-                <h3>{{ma.specialization}}</h3>
-                <h3>{{ma.mode}}</h3>
-                <h3>{{ma.cost}}</h3>
-                <h3>{{ma.available}}</h3>
-            </li>
-            {% endfor %}
-        </ul> <!-- cd-gallery-items -->
+        <div class="table-users">
+            <div class="header">Staff</div>
+                <table cellspacing="0">    
+                    <tr>
+                        <th width="150">Image</th>
+                        <th>Name</th>
+                        <th>Employee</th>
+                        <th>Specialization</th>
+                        <th>Mode of Charging</th>
+                        <th>Cost</th>
+                    </tr>
+                    {% for ma in man %}
+                    <tr>
+                        <td><img id="img" src="{{ma.img.url}}" alt="Preview image"></td>
+                        <td>{{ma.name}}</td>
+                        <td>{{ma.type}}</td>
+                        <td>{{ma.specialization}}</td>
+                        <td>{{ma.mode}}</td>
+                        <td>{{ma.cost}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+        </div>
     </main>
 
     <div id="cd-shadow-layer"></div>
     <div id="cd-cart">
         <ul>
             <li>
-                <h3>This is amazing</h3>
+                <h3 style="background-color:lightcyan;font-weight: bold;font-size:large; color:darkmagenta;text-align:center;">Report Summary</h3>
             </li>
         </ul>
     </div>

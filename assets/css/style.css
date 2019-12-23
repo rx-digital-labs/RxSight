@@ -3,6 +3,7 @@
 Primary style
 
 -------------------------------- */
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,6 +52,7 @@ Modules - reusable parts of our design
   content: '';
   display: table;
   clear: both;
+
 }
 
 .cd-img-replace {
@@ -349,10 +351,11 @@ main {
   background: #eeeff7;
   padding-top: 70px;
   z-index: 1;
+  
 }
 @media only screen and (min-width: 768px) {
   main {
-    padding-top: 90px;
+  padding-top: 90px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -363,11 +366,11 @@ main {
 
 #cd-gallery-items li {
   margin-bottom: 1.5em;
+  text-indent: 50%;
 }
 #cd-gallery-items li img {
   width: 100%;
   display: block;
-  border-radius: 0.25em;
 }
 @media only screen and (min-width: 768px) {
   #cd-gallery-items li {

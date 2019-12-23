@@ -25,6 +25,12 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+h4 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: darkviolet;
+}
+
 a {
   color: #435779;
   text-decoration: none;
