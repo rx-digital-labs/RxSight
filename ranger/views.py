@@ -20,3 +20,6 @@ def man(request):
 
 def calender(request):
     return render(request,'ranger/calender.html')
+
+def tark(request,id):
+    return render(request,'ranger/calender.html')
