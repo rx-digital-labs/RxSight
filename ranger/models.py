@@ -10,6 +10,7 @@ class surgery(models.Model):
     class Meta:
          managed = True
          db_table = 'rxsight\".\"surgery'
+         this is used for accesing a particular schea in database
 '''
 class manpower(models.Model):
     name = models.CharField(max_length=100)
