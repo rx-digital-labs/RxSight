@@ -19,7 +19,7 @@
 </head>
 <body class="foo">
 	<header>
-		<div id="logo"><div class="pulse"><img src="{% static 'img/rx1.png' %}" alt="Homepage" height="80" width="80"></div></div>
+		<div id="logo"><img style="background-color: floralwhite;border-radius: 50px;" src="{% static 'img/RxEmpower.png' %}" alt="Homepage" height="95" width="95"></div>
 
 		<div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
 			<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
@@ -36,9 +36,9 @@
 		<ul id="cd-gallery-items" class="cd-container">
 			{% for sur in surg %}
 			<li>
-				<a href="in1/{{sur.id}}">
-				<img src="{{sur.img.url}}" alt="Preview image">
-				<h4 style="background-color:lightcyan;font-weight: bold;font-size:large; color:darkmagenta;text-align:center;">{{sur.name}}</h4>
+				<a href="{{sur.id}}">
+				<img style="padding:30px;" src="{{sur.img.url}}" alt="Preview image">
+				<h4 style="padding:3px;background-color:lightcyan;font-weight: bold;font-size:large; color:darkmagenta;text-align:center;">{{sur.name}}</h4>
 				</a>
 			</li>
 			{% endfor %}
@@ -49,6 +49,12 @@
 	<div id="cd-cart">
 		<ul>
 			<li><h3 style="background-color:lightcyan;font-weight: bold;font-size:large; color:darkmagenta;text-align:center;">Report Summary</h3></li>
+			<li>
+				<h2>Surgery</h2>
+				<h3>{{plea}}</h3>
+				<h2>Staff</h2>
+				<h2>{{lap}}</h2>
+			</li>
 		</ul>
 	</div>
 </body>

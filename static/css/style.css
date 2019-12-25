@@ -78,14 +78,14 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background: #31353d;
+  background:red;
   text-align: center;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   z-index: 4;
 }
 @media only screen and (min-width: 1200px) {
   header {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -101,7 +101,7 @@ header {
 }
 @media only screen and (min-width: 1200px) {
   #logo {
-    padding-top: 20px;
+    padding-top: 1px;
     position: absolute;
     /* logo left margin on Dekstop */
     left: 2.4em;
@@ -128,7 +128,8 @@ header {
   left: 0;
 }
 #cd-hamburger-menu a {
-  background: #26292f url("../img/cd-hamburger-menu.svg") no-repeat center center;
+  background: #26292f url("../img/cd-hamburger-menu.png") no-repeat center center;
+  background-size: 40px;
 }
 @media only screen and (min-width: 1200px) {
   #cd-hamburger-menu {
@@ -142,7 +143,7 @@ header {
 #cd-cart-trigger a {
   background: #26292f url("../img/cart.png") no-repeat center center;
   will-change: transform; 
-  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg); 
 }
 @media only screen and (min-width: 1200px) {
   #cd-cart-trigger {
@@ -178,7 +179,7 @@ header {
   #main-nav, #cd-cart {
     width: 30%;
     /* header height has changed */
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 
@@ -200,7 +201,7 @@ header {
   border-bottom: 1px solid #e0e6ef;
 }
 #main-nav ul .current1 {
-  box-shadow: inset 3px 0 #435779;
+  box-shadow: inset 4px 0 #435779;
 }
 @media only screen and (min-width: 1200px) {
   #main-nav {
